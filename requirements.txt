@@ -1,0 +1,29 @@
+# Guardião Escolar - Sistema de Controle de Acesso Escolar
+# Requisitos de instalação
+# Compatível com Python 3.10, 3.11 e 3.12
+
+# Interface gráfica
+PyQt5>=5.15.9
+
+# Processamento de imagem e câmera
+opencv-python>=4.8.0
+numpy>=1.26.0
+
+# Reconhecimento facial
+# NOTA: face_recognition requer dlib, que pode ser difícil de instalar no Windows
+# Veja as instruções no README.md
+face_recognition>=1.3.0
+dlib>=19.24.0
+
+# Banco de dados (já incluso no Python)
+# sqlite3
+
+# Serialização de dados
+# pickle (já incluso no Python)
+
+# Utilitários
+Pillow>=10.0.0
+
+# Exportação de relatórios
+reportlab>=4.0.0
+openpyxl>=3.1.0

@@ -1,0 +1,139 @@
+# ========================================
+# Guardião Escolar - .gitignore
+# ========================================
+
+# ============ Python ============
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Translations
+*.mo
+*.pot
+
+# ============ Ambientes Virtuais ============
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.python-version
+
+# ============ IDEs e Editores ============
+# VS Code
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Spyder
+.spyderproject
+.spyproject
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# ============ Sistema Operacional ============
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Linux
+*~
+.directory
+
+# ============ Dados do Projeto ============
+# Banco de dados SQLite (dados locais)
+data/*.db
+data/*.sqlite
+data/*.sqlite3
+
+# Encodings faciais (dados sensíveis dos alunos)
+data/faces/*.pkl
+data/faces/*.pickle
+
+# Fotos dos alunos (privacidade)
+data/fotos/
+
+# Logs
+logs/
+*.log
+
+# ============ Arquivos Temporários ============
+*.tmp
+*.temp
+*.bak
+*.backup
+
+# ============ Configurações Locais ============
+config.local.py
+settings.local.py
+.env.local

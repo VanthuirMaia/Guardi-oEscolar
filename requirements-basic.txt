@@ -1,0 +1,13 @@
+# Guardião Escolar - Requisitos Básicos (sem reconhecimento facial)
+# Use este arquivo se tiver problemas com dlib/face_recognition
+# O sistema funcionará em modo limitado (apenas registro manual)
+
+# Interface gráfica
+PyQt5>=5.15.9
+
+# Processamento de imagem e câmera
+opencv-python>=4.8.0
+numpy>=1.26.0
+
+# Utilitários
+Pillow>=10.0.0
