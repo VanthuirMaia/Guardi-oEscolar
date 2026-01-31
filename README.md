@@ -1,4 +1,4 @@
-# Guardião Escolar
+fornece "apenas" o texto pro commit# Guardião Escolar
 
 <div align="center">
 
@@ -10,7 +10,7 @@
 
 **Sistema de Controle de Acesso Escolar com Reconhecimento Facial**
 
-*Tecnologia acessível para escolas públicas brasileiras*
+_Tecnologia acessível para escolas públicas brasileiras_
 
 </div>
 
@@ -25,6 +25,7 @@ Este projeto foi desenvolvido com **cunho 100% social**, visando democratizar o 
 ### O Problema
 
 Muitas escolas públicas brasileiras ainda dependem de métodos manuais e ultrapassados para controlar o acesso de alunos:
+
 - Listas de chamada em papel
 - Carteirinhas físicas facilmente perdidas ou falsificadas
 - Porteiros sobrecarregados tentando identificar centenas de alunos
@@ -34,6 +35,7 @@ Muitas escolas públicas brasileiras ainda dependem de métodos manuais e ultrap
 ### A Solução
 
 O Guardião Escolar oferece uma solução **gratuita, offline e de fácil implementação** que utiliza reconhecimento facial para:
+
 - Registrar automaticamente a entrada e saída de alunos
 - Manter histórico completo e confiável de acessos
 - Funcionar 100% localmente, sem necessidade de internet
@@ -44,21 +46,25 @@ O Guardião Escolar oferece uma solução **gratuita, offline e de fácil implem
 ## Impacto Social
 
 ### Para as Escolas
+
 - **Custo zero de licenciamento** - Software livre e gratuito
 - **Independência de internet** - Funciona offline
 - **Hardware acessível** - Roda em computadores comuns
 - **Fácil manutenção** - Código aberto e documentado
 
 ### Para os Alunos
+
 - **Mais segurança** - Controle rigoroso de quem entra e sai
 - **Registro automático** - Sem filas ou atrasos na entrada
 - **Privacidade garantida** - Dados armazenados apenas localmente
 
 ### Para os Responsáveis
+
 - **Tranquilidade** - Saber que há controle de acesso na escola
 - **Transparência** - Possibilidade de consultar registros
 
 ### Para a Comunidade
+
 - **Modelo replicável** - Pode ser implementado em qualquer escola
 - **Código aberto** - Permite adaptações às necessidades locais
 - **Documentação completa** - Facilita a implementação por voluntários
@@ -68,6 +74,7 @@ O Guardião Escolar oferece uma solução **gratuita, offline e de fácil implem
 ## Funcionalidades
 
 ### Implementadas (MVP)
+
 - [x] Monitoramento em tempo real via webcam
 - [x] Reconhecimento facial automático
 - [x] Modo entrada/saída (toggle)
@@ -84,6 +91,7 @@ O Guardião Escolar oferece uma solução **gratuita, offline e de fácil implem
 - [x] Personalização com nome da escola e cidade
 
 ### Roadmap Futuro
+
 - [ ] Notificação para responsáveis (SMS/WhatsApp)
 - [ ] Integração com sistema de frequência escolar
 - [ ] Dashboard administrativo
@@ -95,18 +103,21 @@ O Guardião Escolar oferece uma solução **gratuita, offline e de fácil implem
 ## Requisitos do Sistema
 
 ### Hardware Mínimo
+
 - Processador: Intel Core i3 ou equivalente
 - Memória RAM: 4GB
 - Webcam: 720p (comum em notebooks)
 - Armazenamento: 1GB livre
 
 ### Hardware Recomendado
+
 - Processador: Intel Core i5 ou superior
 - Memória RAM: 8GB
 - Webcam: 1080p USB externa
 - Armazenamento: SSD com 5GB livres
 
 ### Software
+
 - Windows 10/11, Linux ou macOS
 - Python 3.8 ou superior
 
@@ -115,12 +126,14 @@ O Guardião Escolar oferece uma solução **gratuita, offline e de fácil implem
 ## Instalação
 
 ### 1. Clone o repositório
+
 ```bash
 git clone https://github.com/seu-usuario/guardiao-escolar.git
 cd guardiao-escolar
 ```
 
 ### 2. Crie um ambiente virtual (recomendado)
+
 ```bash
 python -m venv venv
 
@@ -132,6 +145,7 @@ source venv/bin/activate
 ```
 
 ### 3. Instale as dependências
+
 ```bash
 pip install -r requirements.txt
 ```
@@ -141,12 +155,14 @@ pip install -r requirements.txt
 A biblioteca `face_recognition` requer o `dlib`, que pode ser trabalhoso de instalar no Windows. Opções:
 
 **Opção 1 - Via Conda (mais fácil):**
+
 ```bash
 conda install -c conda-forge dlib
 pip install face_recognition
 ```
 
 **Opção 2 - Via pip (requer Visual Studio Build Tools):**
+
 ```bash
 pip install cmake
 pip install dlib
@@ -154,6 +170,7 @@ pip install face_recognition
 ```
 
 ### 4. Execute o sistema
+
 ```bash
 python main.py
 ```
@@ -163,11 +180,13 @@ python main.py
 ## Como Usar
 
 ### Primeira Execução
+
 1. Execute `python main.py`
 2. O sistema abrirá a interface principal
 3. A câmera será iniciada automaticamente
 
 ### Cadastrando Alunos
+
 1. Clique em **"CADASTRAR ALUNO"**
 2. Posicione o aluno em frente à câmera
 3. Capture 5 fotos em diferentes ângulos
@@ -175,18 +194,22 @@ python main.py
 5. Clique em **"SALVAR CADASTRO"**
 
 ### Registrando Entradas/Saídas
+
 1. Selecione o modo: **ENTRADA** ou **SAÍDA**
 2. O aluno deve se posicionar em frente à câmera
 3. O reconhecimento é automático
 4. Feedback verde = reconhecido | Vermelho = não reconhecido
 
 ### Registro Manual
+
 Caso o reconhecimento falhe:
+
 1. Clique em **"REGISTRO MANUAL"**
 2. Digite a matrícula do aluno
 3. Confirme o registro
 
 ### Consultando Registros
+
 1. Clique em **"VER REGISTROS"**
 2. Selecione a data desejada
 3. Filtre por tipo (entrada/saída) se necessário
@@ -242,6 +265,7 @@ O Guardião Escolar foi desenvolvido com **privacidade em primeiro lugar**:
 - **LGPD**: Preparado para conformidade com a Lei Geral de Proteção de Dados
 
 ### Recomendações de Segurança
+
 - Mantenha o computador com senha de acesso
 - Faça backup regular do banco de dados
 - Restrinja o acesso físico ao equipamento
@@ -254,6 +278,7 @@ O Guardião Escolar foi desenvolvido com **privacidade em primeiro lugar**:
 Este projeto foi criado para ser **facilmente replicável**. Se você quer implementar o Guardião Escolar em sua escola:
 
 ### Passo a Passo
+
 1. **Avalie os requisitos** - Verifique se a escola tem um computador compatível
 2. **Obtenha uma webcam** - Pode ser a do notebook ou uma USB externa
 3. **Instale o sistema** - Siga o guia de instalação acima
@@ -262,7 +287,9 @@ Este projeto foi criado para ser **facilmente replicável**. Se você quer imple
 6. **Comunique os responsáveis** - Explique o sistema e obtenha consentimento
 
 ### Suporte à Implementação
+
 Se você é de uma escola pública e precisa de ajuda para implementar:
+
 - Abra uma **Issue** no GitHub descrevendo sua necessidade
 - Entre em contato pelos canais oficiais do projeto
 - Busque apoio de voluntários na comunidade de tecnologia local
@@ -274,6 +301,7 @@ Se você é de uma escola pública e precisa de ajuda para implementar:
 Contribuições são muito bem-vindas! Este é um projeto social e toda ajuda é valiosa.
 
 ### Como Contribuir
+
 1. Faça um Fork do projeto
 2. Crie uma branch para sua feature (`git checkout -b feature/NovaFuncionalidade`)
 3. Commit suas mudanças (`git commit -m 'Adiciona nova funcionalidade'`)
@@ -281,6 +309,7 @@ Contribuições são muito bem-vindas! Este é um projeto social e toda ajuda é
 5. Abra um Pull Request
 
 ### Áreas que Precisam de Ajuda
+
 - **Desenvolvimento**: Novas funcionalidades, correção de bugs
 - **Documentação**: Melhorar guias, traduzir para outros idiomas
 - **Testes**: Testar em diferentes ambientes e configurações
@@ -291,22 +320,23 @@ Contribuições são muito bem-vindas! Este é um projeto social e toda ajuda é
 
 ## Tecnologias Utilizadas
 
-| Tecnologia | Versão | Finalidade |
-|------------|--------|------------|
-| Python | 3.8+ | Linguagem principal |
-| PyQt5 | 5.15 | Interface gráfica desktop |
-| OpenCV | 4.8 | Captura e processamento de vídeo |
-| face_recognition | 1.3 | Reconhecimento facial |
-| dlib | 19.24 | Machine learning para detecção facial |
-| SQLite | 3 | Banco de dados local |
-| NumPy | 1.24 | Processamento numérico |
-| Pillow | 10.1 | Manipulação de imagens |
+| Tecnologia       | Versão | Finalidade                            |
+| ---------------- | ------ | ------------------------------------- |
+| Python           | 3.8+   | Linguagem principal                   |
+| PyQt5            | 5.15   | Interface gráfica desktop             |
+| OpenCV           | 4.8    | Captura e processamento de vídeo      |
+| face_recognition | 1.3    | Reconhecimento facial                 |
+| dlib             | 19.24  | Machine learning para detecção facial |
+| SQLite           | 3      | Banco de dados local                  |
+| NumPy            | 1.24   | Processamento numérico                |
+| Pillow           | 10.1   | Manipulação de imagens                |
 
 ---
 
 ## Licença
 
 Este projeto é distribuído sob a licença **MIT**. Isso significa que você pode:
+
 - Usar comercialmente
 - Modificar
 - Distribuir
@@ -324,7 +354,7 @@ Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
 Desenvolvido por **Vanthuir Maia**
 
-*Projeto de cunho social para segurança escolar*
+_Projeto de cunho social para segurança escolar_
 
 </div>
 
@@ -342,7 +372,7 @@ Desenvolvido por **Vanthuir Maia**
 
 **Feito com amor para a educação pública brasileira**
 
-*"A educação é a arma mais poderosa para mudar o mundo"* - Nelson Mandela
+_"A educação é a arma mais poderosa para mudar o mundo"_ - Nelson Mandela
 
 **Axio - Sistemas e Automações Inteligentes | Vanthuir Maia**
 
